@@ -1,4 +1,10 @@
 package com.furkanakcakaya.kotlinroomsql.entity
 
-class School {
-}
+import androidx.room.Entity
+
+@Entity(tableName = "School")
+data class School(
+    val school_id: Int,
+    val school_name: String,
+    val school_location: String
+)
